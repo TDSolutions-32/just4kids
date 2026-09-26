@@ -13,9 +13,9 @@
 
   const CENTER = {
     tz: 'America/New_York',
-    // [open, close] in hours (24h, decimals allowed) per weekday (0 = Sun); Saturday is by reservation
+    // [open, close] in hours (24h, decimals allowed) per weekday (0 = Sun)
     hours: { 1: [7, 21], 2: [7, 21], 3: [7, 21], 4: [7, 21], 5: [7, 21], 6: [9, 19] },
-    apptDays: [6],
+    apptDays: [],   // weekdays that are by reservation only (none currently)
     // School year: weekdays open early at 6:30am for before-school drop-off.
     // Update these dates each year to match the Onslow County Schools calendar.
     schoolYear: { from: '2026-08-01', to: '2027-06-30', weekdayOpen: 6.5 },
