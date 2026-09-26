@@ -249,13 +249,9 @@ h3 { font-weight: 700; line-height: 1.2; }
 .timeline a { color: var(--green); font-weight: 700; white-space: nowrap; }
 
 /* ---------- About ---------- */
-.about { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 80px); align-items: center; }
-.about__photo { width: 100%; max-width: 420px; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 25%; border-radius: var(--r-lg); }
-.about__copy > p:not(.eyebrow) { margin-top: 16px; color: var(--ink-2); font-size: 17.5px; }
-.quote { margin-top: 28px; padding: 22px 24px; border-left: 4px solid var(--sun); border-radius: 0 var(--r) var(--r) 0; background: var(--white); }
-.quote p { font-family: var(--serif); font-variation-settings: "SOFT" 100; font-style: italic; font-size: 1.12rem; line-height: 1.5; }
-.quote footer { margin-top: 10px; font-size: 14.5px; color: var(--ink-2); }
-.quote b { color: var(--ink); }
+.about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 16px clamp(32px, 6vw, 80px); align-items: end; }
+.about__copy > p { color: var(--ink-2); font-size: 17.5px; }
+.about__copy > p + p { margin-top: 12px; }
 .about__hiring a { color: var(--green); font-weight: 800; }
 
 /* ---------- FAQ ---------- */
@@ -368,7 +364,6 @@ h3 { font-weight: 700; line-height: 1.2; }
   .hero__photo { order: -1; }
   .plans { grid-template-columns: 1fr; max-width: 560px; }
   .plan--feature { order: -1; }
-  .about__photo { max-width: 320px; }
   .foot__top { grid-template-columns: 1fr 1fr; }
 }
 
